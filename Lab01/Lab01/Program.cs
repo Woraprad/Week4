@@ -1,25 +1,17 @@
 ﻿using System;
-namespace variableProperties
+public class MathTest
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
         {
-             double x,y,z;
-            Console.WriteLine("Input distance from sun :");
-            x = Console.Read();
-            const double lightSpeed = 186000d;   
-            Console.WriteLine("Light speed = {0} Mile Per second", lightSpeed);
-            const double mileTokm = 1.609344;
-            z = 93000000 * 1.609344;
-            y = x / z;
-            Console.WriteLine("Light speed = {0} km Per second", lightSpeed*mileTokm);
-            Console.WriteLine("SunDistance = {0} km", x);
-            double SunToEarthTimeOfLight = x / lightSpeed;  
-            Console.WriteLine("SunTimeOfLight = {0} seconds", SunToEarthTimeOfLight);
-            Console.WriteLine("SunTimeOfLight = {0} minutes", SunToEarthTimeOfLight/60d);
-            Console.WriteLine("distance from sun = {0} AU",y);
-            Console.ReadKey();
+            Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" +
+            spaces(Math.Sin(i)) + "*", i, Math.Sin(i));
         }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
     }
 }
