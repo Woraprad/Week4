@@ -3,15 +3,22 @@
 
 namespace Lab01
 {
-    class Program
+    class Operators
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Data type : long");
-            Console.WriteLine("Size :" + sizeof(long));
-            Console.WriteLine("Minimum Value :" + long.MinValue);
-            Console.WriteLine("Maximum Value :" + long.MaxValue);
+            int x;
+            Console.Write("Input number 0-9 :");
+            x = Console.Read();
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            Console.WriteLine("Random Number :{0}",randomNumber);
+
+            bool a = x > randomNumber;
+            Console.WriteLine("Input number > Random Number ={0}", a);
+            
             Console.ReadKey();
         }
     }
+    
 }
