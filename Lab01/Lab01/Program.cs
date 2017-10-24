@@ -7,10 +7,10 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Data type : sbyte");
-            Console.WriteLine("Size :" + sizeof(sbyte));
-            Console.WriteLine("Minimum Value :" + sbyte.MinValue);
-            Console.WriteLine("Maximum Value :" + sbyte.MaxValue);
+            Console.WriteLine("Data type : ushort");
+            Console.WriteLine("Size :" + sizeof(ushort));
+            Console.WriteLine("Minimum Value :" + ushort.MinValue);
+            Console.WriteLine("Maximum Value :" + ushort.MaxValue);
             Console.ReadKey();
         }
     }
