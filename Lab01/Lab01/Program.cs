@@ -11,7 +11,7 @@ namespace Lab01
             Console.WriteLine("12345678901234567890");
             Console.WriteLine("{0, 0}", 1);
             Console.WriteLine("{0, 1}", 1);
-            Console.WriteLine("{1, 2}", 1);
+            Console.WriteLine("{0, 2}", 1);
             Console.WriteLine("{0, 3}", 1);
             Console.WriteLine("{0, 5}", 1);
             Console.WriteLine("{0, 10}", 1);
